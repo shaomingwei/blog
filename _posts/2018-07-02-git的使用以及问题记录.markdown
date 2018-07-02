@@ -20,11 +20,11 @@ categories: jekyll update
  - **git clone 仓库地址**
 
 #### 分支使用
-可以在分支上先编写代码，然后在合并到主支，避免错误，合并后要提交创建dev分支,-b表示切换：**git checkout -b dev**
-查看当前分支：**git branch**
-切换分支：**git checkout master**
-分支合并：**git merge dev**
-删除分支：**git branch -d dev**
+可以在分支上先编写代码，然后在合并到主支，避免错误，合并后要提交创建dev分支,-b表示切换：**git checkout -b dev**</br>
+查看当前分支：**git branch**</br>
+切换分支：**git checkout master**</br>
+分支合并：**git merge dev**</br>
+删除分支：**git branch -d dev**</br>
 
 #### 撤销操作
 
@@ -33,15 +33,15 @@ categories: jekyll update
  - 已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库
 
 #### 一些使用过程中的问题记录
-- 提示出错信息：<label style="red">fatal: remote origin already exists</label>
-1、先输入$ git remote rm origin
-2、再输入$ git remote add origin "仓库地址"就不会报错了！
+- 提示出错信息：<label style="red">fatal: remote origin already exists</label></br>
+1、先输入$ git remote rm origin</br>
+2、再输入$ git remote add origin "仓库地址"就不会报错了！</br>
 
-- 在使用Git把当前分支合并到master提示“Already up-to-date”，但当前分支和 master 分支代码不同步。
-假设当前分支是：dev，主分支是：master。
-解决方法：
-git checkout master；
-git reset --hard dev;
-git push --force origin master
+- 在使用Git把当前分支合并到master提示“Already up-to-date”，但当前分支和 master 分支代码不同步。</br>
+假设当前分支是：dev，主分支是：master。</br>
+解决方法：</br>
+git checkout master；</br>
+git reset --hard dev;</br>
+git push --force origin master</br>
 
 推荐廖雪峰老师的git教程，写得很清楚明白：[点击前往](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
