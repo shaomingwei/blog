@@ -34,17 +34,6 @@ es6的写法：
     var mapResults = num1.map((item,index,array) => item*2);
     console.log(mapResults);
     
-### 函数默认值
-
-    function action(num = 200) {
-	    console.log(num)
-    }
-    action(0) // 0
-    action() //200
-    action(300) //300
-    
-### 箭头函数
-
 -   不需要 function 关键字来创建函数
 -   省略 return 关键字
 -   继承当前上下文的 this 关键字
@@ -54,8 +43,16 @@ es6的写法：
 		[1,2,3].map((function(x){
 	    	return x + 1
 	    }).bind(this))
-
 	
+### 函数默认值
+
+    function action(num = 200) {
+	    console.log(num)
+    }
+    action(0) // 0
+    action() //200
+    action(300) //300
+    
 ### 复制
 
     const objA = { name: 'cc', age: 18 }
