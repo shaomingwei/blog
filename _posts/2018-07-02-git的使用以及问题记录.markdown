@@ -40,7 +40,9 @@ categories: jekyll update
 
 #### 一些使用过程中的问题记录
 - 提示出错信息：<label style="red">fatal: remote origin already exists</label>  
+
 1、先输入$ git remote rm origin  
+
 2、再输入$ git remote add origin "仓库地址"就不会报错了！  
 
 - 在使用Git把当前分支合并到master提示“Already up-to-date”，但当前分支和 master 分支代码不同步。  
