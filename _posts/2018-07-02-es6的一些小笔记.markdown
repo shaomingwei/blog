@@ -21,7 +21,7 @@ const：表示常量
      const f1 = (name,age) => name + age;
      alert(f1('show2' +','+ 22));
 
-> 箭头函数的应用实例
+###箭头函数的应用实例
 
 传统es5写法：
 
@@ -36,7 +36,7 @@ es6的写法：
     var mapResults = num1.map((item,index,array) => item*2);
     console.log(mapResults);
     
-> 函数默认值
+###函数默认值
 
     function action(num = 200) {
 	    console.log(num)
@@ -45,19 +45,20 @@ es6的写法：
     action() //200
     action(300) //300
     
-> 箭头函数
+###箭头函数
 
 -   不需要 function 关键字来创建函数
 -   省略 return 关键字
 -   继承当前上下文的 this 关键字
 
-    [1,2,3].map(x => x + 1)  
-    等同于
-    [1,2,3].map((function(x){
-	    return x + 1    
-	}).bind(this))
+		[1,2,3].map(x => x + 1)  
+		等同于
+		[1,2,3].map((function(x){
+	    	return x + 1
+	    }).bind(this))
+
 	
-> 复制
+####复制
 
     const objA = { name: 'cc', age: 18 }
     const objB = { address: 'beijing' }
@@ -68,7 +69,7 @@ es6的写法：
     console.log(objC) // { name: 'cc', age: 18, address: 'beijing' }
     console.log(obj) // { name: 'cc', age: 18, address: 'beijing' } 
     
- > 字符串拼接
+###字符串拼接
  
 ES5：
 
