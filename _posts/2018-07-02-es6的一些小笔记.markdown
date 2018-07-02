@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "git的使用以及问题记录"
+date:   2018-07-02 15:40:56
+categories: jekyll update
+---
+
+以下只是为了方便记忆，写的一些提示类型的笔记，更多请看：[ES6入门](http://es6.ruanyifeng.com/)
+
+let：表示变量
+const：表示常量
+都属于块级作用域，以下是小例子：
+   
+
+     const f = function (name){
+    	    return name;
+        }
+        alert(f('show'));
+        const f1 = (name,age) => name + age;
+        alert(f1('show2' +','+ 22));
+
+> 箭头函数的应用实例
+
+传统es5写法：
+
+    var num1 = [1,2,3,4,5,4,3,2,1];
+    var mapResult = num1.map(function(item,index,array){
+	    return item*2;
+    });
+    console.log(mapResult);
+es6的写法：
+
+    var mapResults = num1.map((item,index,array) => item*2);
+    console.log(mapResults);
+> 函数默认值
+
+    function action(num = 200) {
+	    console.log(num)
+    }
+    action(0) // 0
+    action() //200
+    action(300) //300
+> 箭头函数
+-   不需要 function 关键字来创建函数
+-   省略 return 关键字
+-   继承当前上下文的 this 关键字
+
+    [1,2,3].map(x => x + 1)  
+    等同于
+    [1,2,3].map((function(x){
+	    return x + 1    
+	}).bind(this))
+> 复制
+
+    const objA = { name: 'cc', age: 18 }
+    const objB = { address: 'beijing' }
+    const objC = {} // 这个为目标对象
+    const obj = Object.assign(objC, objA, objB) // 我们将 objA objB objC obj 分别输出看看
+    console.log(objA) // { name: 'cc', age: 18 }
+    console.log(objB) // { address: 'beijing' }
+    console.log(objC) // { name: 'cc', age: 18, address: 'beijing' }
+    console.log(obj) // { name: 'cc', age: 18, address: 'beijing' } 
+    
+ > 字符串拼接
+ 
+ES5：
+
+    var name = 'lux'
+    console.log('hello' + name)
+
+es6：
+
+    const name = 'lux'
+    console.log(`hello ${name}`) _//hello lux_
+
+  
+
+for...in 语句用于对数组或者对象的属性进行循环操作。
+
+[for循环](https://www.baidu.com/s?wd=for%E5%BE%AA%E7%8E%AF&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)是对数组的元素进行循环，而不能引用于非数组对象。
+
+  
+
+js三元运算符：
+条件 ? 结果1 : 结果2;
+
