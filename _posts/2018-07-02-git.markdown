@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "git的使用以及问题记录"
+date:   2018-07-02 15:40:56
+categories: jekyll update
+---
+
