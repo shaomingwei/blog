@@ -20,11 +20,17 @@ categories: jekyll update
  - **git clone 仓库地址**
 
 #### 分支使用
+
 可以在分支上先编写代码，然后在合并到主支，避免错误，合并后要提交创建dev分支,-b表示切换：**git checkout -b dev**  
+
 查看当前分支：**git branch**  
+
 切换分支：**git checkout master**  
+
 分支合并：**git merge dev**  
+
 删除分支：**git branch -d dev**  
+
 
 #### 撤销操作
 
