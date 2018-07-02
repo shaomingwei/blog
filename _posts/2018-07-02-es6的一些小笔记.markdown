@@ -8,9 +8,7 @@ categories: jekyll update
 以下只是为了方便记忆，写的一些提示类型的笔记，更多请看：[ES6入门](http://es6.ruanyifeng.com/)
 
 let：表示变量  
-  
 const：表示常量  
-
 都属于块级作用域，以下是小例子：
    
 
@@ -21,7 +19,7 @@ const：表示常量
      const f1 = (name,age) => name + age;
      alert(f1('show2' +','+ 22));
 
-###箭头函数的应用实例
+### 箭头函数的应用实例
 
 传统es5写法：
 
@@ -36,7 +34,7 @@ es6的写法：
     var mapResults = num1.map((item,index,array) => item*2);
     console.log(mapResults);
     
-###函数默认值
+### 函数默认值
 
     function action(num = 200) {
 	    console.log(num)
@@ -45,7 +43,7 @@ es6的写法：
     action() //200
     action(300) //300
     
-###箭头函数
+### 箭头函数
 
 -   不需要 function 关键字来创建函数
 -   省略 return 关键字
@@ -58,7 +56,7 @@ es6的写法：
 	    }).bind(this))
 
 	
-####复制
+### 复制
 
     const objA = { name: 'cc', age: 18 }
     const objB = { address: 'beijing' }
@@ -69,7 +67,7 @@ es6的写法：
     console.log(objC) // { name: 'cc', age: 18, address: 'beijing' }
     console.log(obj) // { name: 'cc', age: 18, address: 'beijing' } 
     
-###字符串拼接
+### 字符串拼接
  
 ES5：
 
@@ -85,7 +83,6 @@ for...in 语句用于对数组或者对象的属性进行循环操作。
 
 [for循环](https://www.baidu.com/s?wd=for%E5%BE%AA%E7%8E%AF&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)是对数组的元素进行循环，而不能引用于非数组对象。
 
-  
 
 js三元运算符：
 条件 ? 结果1 : 结果2;
