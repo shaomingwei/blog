@@ -8,7 +8,9 @@ categories: jekyll update
 以下只是为了方便记忆，写的一些提示类型的笔记，更多请看：[ES6入门](http://es6.ruanyifeng.com/)
 
 let：表示变量  
+  
 const：表示常量  
+
 都属于块级作用域，以下是小例子：
    
 
