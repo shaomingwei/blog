@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "git的使用以及问题记录"
+title:  "es6的一些小笔记"
 date:   2018-07-02 15:40:56
 categories: jekyll update
 ---
