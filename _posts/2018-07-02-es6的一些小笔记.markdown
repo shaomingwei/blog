@@ -28,10 +28,12 @@ const：表示常量
 	    return item*2;
     });
     console.log(mapResult);
+    
 es6的写法：
 
     var mapResults = num1.map((item,index,array) => item*2);
     console.log(mapResults);
+    
 > 函数默认值
 
     function action(num = 200) {
@@ -40,7 +42,9 @@ es6的写法：
     action(0) // 0
     action() //200
     action(300) //300
+    
 > 箭头函数
+
 -   不需要 function 关键字来创建函数
 -   省略 return 关键字
 -   继承当前上下文的 this 关键字
@@ -50,6 +54,7 @@ es6的写法：
     [1,2,3].map((function(x){
 	    return x + 1    
 	}).bind(this))
+	
 > 复制
 
     const objA = { name: 'cc', age: 18 }
@@ -68,7 +73,7 @@ ES5：
     var name = 'lux'
     console.log('hello' + name)
 
-es6：
+ES6：
 
     const name = 'lux'
     console.log(`hello ${name}`) _//hello lux_
@@ -83,4 +88,3 @@ for...in 语句用于对数组或者对象的属性进行循环操作。
 
 js三元运算符：
 条件 ? 结果1 : 结果2;
-
