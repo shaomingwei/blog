@@ -5,7 +5,6 @@ date:   2018-07-02 15:40:56
 categories: jekyll update
 ---
 
-
 ### git的基本使用
  - **git init**：把当前目录变成可以管理的仓库
  - **git add readme.txt**：添加文件到仓库
