@@ -13,11 +13,11 @@ const：表示常量
    
 
      const f = function (name){
-    	    return name;
-        }
-        alert(f('show'));
-        const f1 = (name,age) => name + age;
-        alert(f1('show2' +','+ 22));
+    	return name;
+     }
+     alert(f('show'));
+     const f1 = (name,age) => name + age;
+     alert(f1('show2' +','+ 22));
 
 > 箭头函数的应用实例
 
@@ -77,8 +77,6 @@ ES6：
 
     const name = 'lux'
     console.log(`hello ${name}`) _//hello lux_
-
-  
 
 for...in 语句用于对数组或者对象的属性进行循环操作。
 
